@@ -18,10 +18,10 @@ const portfolioData = {
   phone: "+91 8303942799",
   email: "sayushmaan18@gmail.com",
   hobbies: ["Playing sports", "Listening to songs", "Watching web series"],
-  currentCompany: "Purple Block",
-  currentRole: "Software Developer Intern",
-  currentProject: "Caliber - AI Insurance Platform",
-  currentTechStack: ["FastAPI", "LiteLLM", "WebSocket", "Voice AI", "Python", "Webhooks"],
+  currentCompany: "EazyCapture",
+  currentRole: "AI Engineer",
+  currentProject: "EazyCapture - AI Accounting Automation",
+  currentTechStack: ["AI/ML", "Python", "Automation", "Document Understanding"],
   education: {
     university: "Dr. APJ Abdul Kalam Technical University",
     degree: "Bachelor's Degree in Computer Science",
@@ -480,7 +480,7 @@ function AIChatbot({ isOpen, onClose, theme }) {
 
       // ── Identity ──
       { patterns: ['who is', 'who are', 'your name', 'about him', 'tell me about', 'introduce', 'himself', 'describe him', 'who is ayushmaan', 'about ayushmaan'],
-        reply: "Ayushmaan Singh is a Full Stack Developer & AI Engineer based in Bangalore, India. He specializes in building intelligent, scalable applications — from microservices architectures to AI-powered agents. He's currently interning at Purple Block working on an AI Insurance Platform." },
+        reply: "Ayushmaan Singh is a Full Stack Developer & AI Engineer based in Bangalore, India. He specializes in building intelligent, scalable applications — from microservices architectures to AI-powered agents. He's currently working at EazyCapture building an AI-powered document understanding and accounting automation platform." },
 
       // ── Contact ──
       { patterns: ['email', 'mail', 'contact', 'reach', 'hire', 'connect', 'get in touch', 'talk to', 'message him', 'reach out'],
@@ -496,11 +496,15 @@ function AIChatbot({ isOpen, onClose, theme }) {
 
       // ── Current Work ──
       { patterns: ['current', 'now', 'doing', 'working on', 'present', 'today', 'currently', 'latest', 'recent'],
-        reply: "Currently, Ayushmaan is a Software Developer Intern at Purple Block, working on 'Caliber' — an AI-powered insurance management platform. His key contributions include:\n\n• Cost tracing system using LiteLLM in the WACA backend (FastAPI)\n• WebSocket for real-time WACA-frontend communication\n• Voice AI agents with prompt tuning\n• Insurance Agent & Motor Policy Agent\n• Webhook integrations for external systems" },
+        reply: "Currently, Ayushmaan is an AI Engineer at EazyCapture, working on an AI-powered document understanding and accounting automation platform. He is building systems to automate manual data entry processes for invoices and receipts to do the heavy lifting for finance teams." },
+
+      // ── EazyCapture (specific) ──
+      { patterns: ['eazycapture', 'accounting automation', 'document understanding', 'peakeaze', 'current company'],
+        reply: "At EazyCapture (by Peakeaze), Ayushmaan is building an AI-powered document understanding and accounting automation platform. The system is designed to automate manual data entry processes for invoices and receipts, significantly reducing human error and doing the heavy lifting for accountants, bookkeepers, and finance teams.\n\nTech: AI/ML, Python, Automation" },
 
       // ── Purple Block / Caliber (specific) ──
-      { patterns: ['purple block', 'caliber', 'insurance', 'waca', 'current intern', 'current company'],
-        reply: "At Purple Block, Ayushmaan works on 'Caliber' — a multi-tenant AI insurance management platform that handles quotes, policies, claims, and renewals.\n\nHis contributions:\n• Built cost tracing system using LiteLLM in WACA backend (FastAPI)\n• Developed multiple APIs and integrated with frontend\n• Implemented WebSocket for real-time communication\n• Built Voice AI agents with prompt tuning\n• Created Insurance Agent & Motor Policy Agent\n• Worked on webhooks for external integrations\n\nTech: FastAPI, LiteLLM, WebSocket, Voice AI, Python, Webhooks" },
+      { patterns: ['purple block', 'caliber', 'insurance', 'waca'],
+        reply: "At Purple Block, Ayushmaan worked on 'Caliber' — a multi-tenant AI insurance management platform that handles quotes, policies, claims, and renewals.\n\nHis contributions:\n• Built cost tracing system using LiteLLM in WACA backend (FastAPI)\n• Developed multiple APIs and integrated with frontend\n• Implemented WebSocket for real-time communication\n• Built Voice AI agents with prompt tuning\n• Created Insurance Agent & Motor Policy Agent\n• Worked on webhooks for external integrations\n\nTech: FastAPI, LiteLLM, WebSocket, Voice AI, Python, Webhooks" },
 
       // ── Amdox / DearDoc (specific) ──
       { patterns: ['amdox', 'deardoc', 'dear doc', 'healthcare', 'health care', 'medical'],
@@ -512,7 +516,7 @@ function AIChatbot({ isOpen, onClose, theme }) {
 
       // ── Experience (general) ──
       { patterns: ['experience', 'intern', 'internship', 'work history', 'companies', 'worked', 'career', 'professional', 'job', 'employment'],
-        reply: "Ayushmaan has completed 3 internships:\n\n🟣 Purple Block (Current) — Software Developer Intern\n   Project: Caliber — AI Insurance Platform\n   Focus: FastAPI, LiteLLM, Voice AI, WebSocket\n\n🔵 Amdox Technologies — Java Developer Intern\n   Project: DearDoc — Healthcare Platform\n   Focus: Saga Pattern, Circuit Breaker, Payment Systems\n\n🟡 Littra Technologies — Java Developer Intern\n   Project: Luxury Closet — E-commerce Platform\n   Focus: Kafka, Microservices, JWT, API Gateway\n\nAsk about any specific internship for more details!" },
+        reply: "Ayushmaan has experience across 4 major roles:\n\n🟠 EazyCapture (Current) — AI Engineer\n   Project: AI Accounting Automation Platform\n   Focus: Document Understanding, AI Models, Python\n\n🟣 Purple Block — Software Developer Intern\n   Project: Caliber — AI Insurance Platform\n   Focus: FastAPI, LiteLLM, Voice AI, WebSocket\n\n🔵 Amdox Technologies — Java Developer Intern\n   Project: DearDoc — Healthcare Platform\n   Focus: Saga Pattern, Circuit Breaker, Payment Systems\n\n🟡 Littra Technologies — Java Developer Intern\n   Project: Luxury Closet — E-commerce Platform\n   Focus: Kafka, Microservices, JWT, API Gateway\n\nAsk about any specific role for more details!" },
 
       // ── Skills (general) ──
       { patterns: ['skill', 'tech', 'stack', 'proficient', 'tools', 'technology', 'technologies', 'what can he do', 'capabilities', 'expertise'],
@@ -1613,7 +1617,7 @@ export default function AyushmaanPortfolio3D() {
                   I'm a passionate <span style={{ color: '#ff00ff', fontWeight: '600' }}>Full Stack Developer</span> and <span style={{ color: '#00ffff', fontWeight: '600' }}>AI Engineer</span> based in <span style={{ color: '#ffff00', fontWeight: '600' }}>Bangalore, India</span>.
                 </p>
                 <p style={{ fontSize: '18px', lineHeight: '1.8', marginBottom: '32px', color: isDark ? 'rgba(255,255,255,0.7)' : 'rgba(0,0,0,0.7)' }}>
-                  From crafting microservices architectures to developing AI-powered agents, I love turning complex problems into elegant solutions. Currently working on cutting-edge insurance tech at Purple Block.
+                  From crafting microservices architectures to developing AI-powered agents, I love turning complex problems into elegant solutions. Currently working on cutting-edge document understanding and accounting automation at EazyCapture.
                 </p>
                 <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: '16px' }}>
                   {[
